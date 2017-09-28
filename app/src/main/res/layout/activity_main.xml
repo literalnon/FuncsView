@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bloold.funccanvas.MainActivity">
+
+    <com.example.bloold.funccanvas.FuncView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fvMain"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnLess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startDraw"
+            android:text="Draw"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="200dp"
+            android:layout_height="195dp"
+            android:id="@+id/lvFunc" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x0: " />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/etxBegin"
+            android:inputType="numberSigned"/>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x1: " />
+
+        <EditText
+            android:id="@+id/etxEnd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="numberSigned" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="y0: " />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/etyBegin"
+                android:inputType="numberSigned"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="y1: " />
+
+            <EditText
+                android:id="@+id/etyEnd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:inputType="numberSigned" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFuncs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funcs"
+        android:layout_gravity="right" />
+
+</FrameLayout>
